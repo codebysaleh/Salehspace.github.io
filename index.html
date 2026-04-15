@@ -58,7 +58,7 @@
           <div class="hero-panel">
             <div class="stat-grid">
               <div class="stat-card">
-                <div class="stat-num">4+</div>
+                <div class="stat-num">5+</div>
                 <div class="stat-label">Live Projects</div>
               </div>
               <div class="stat-card">
@@ -247,6 +247,22 @@
             </div>
           </div>
 
+          <div class="project-card reveal">
+            <div class="project-num">PROJECT_05</div>
+            <div class="project-name">LLEM International — Nonprofit Website</div>
+            <a class="project-url" href="https://lleminternational.com" target="_blank" rel="noopener noreferrer">&#x2197; lleminternational.com</a>
+            <p class="project-desc">
+              WordPress website for a US-based 501(c)(3) nonprofit focused on poverty relief and child sponsorship in Nigeria and Africa. Built donation and payment workflows, sponsorship pages, and CTAs with fully responsive layouts, contact forms, and on-page SEO for a global audience.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">WordPress</span>
+              <span class="stack-tag">Elementor</span>
+              <span class="stack-tag">Donations</span>
+              <span class="stack-tag">Nonprofit</span>
+              <span class="stack-tag">SEO</span>
+            </div>
+          </div>
+
           <!-- MORE COMING CARD -->
           <div class="project-card reveal" style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:40px;border-style:dashed;border-color:rgba(0,245,255,0.18);background:rgba(0,245,255,0.02);">
             <div>
@@ -393,7 +409,6 @@
             </div>
 
             <div class="contact-links">
-              <!-- href set by JS so Cloudflare cannot obfuscate it -->
               <a href="#" id="emailLink" class="contact-link">
                 <span class="contact-link-icon">&#x2709;</span>
                 abusalehsiddique14&#64;gmail&#46;com
@@ -454,7 +469,6 @@
   </style>
 
   <script>
-    /* Email link — assembled in JS so Cloudflare cannot detect and obfuscate it */
     (function() {
       var a = 'abusalehsiddique14';
       var b = 'gmail';
@@ -463,7 +477,6 @@
       if (el) { el.setAttribute('href', 'mai' + 'lto:' + a + '@' + b + '.' + c); }
     })();
 
-    /* Custom Cursor */
     var cursor    = document.getElementById('cursor');
     var cursorRing = document.getElementById('cursorRing');
     var mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
@@ -495,7 +508,6 @@
       });
     });
 
-    /* Scroll Reveal */
     var reveals = document.querySelectorAll('.reveal');
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry, i) {
@@ -508,7 +520,6 @@
     }, { threshold: 0.12 });
     reveals.forEach(function(el) { observer.observe(el); });
 
-    /* Active Nav */
     var sections = document.querySelectorAll('section[id]');
     var navLinks = document.querySelectorAll('.nav-links a');
     window.addEventListener('scroll', function() {
@@ -521,7 +532,6 @@
       });
     });
 
-    /* Form */
     function handleSubmit(e) {
       e.preventDefault();
       var btn = e.target.querySelector('button');
@@ -535,7 +545,6 @@
       }, 3000);
     }
 
-    /* Terminal blink cursor */
     var terminal = document.querySelector('.terminal-box');
     if (terminal) {
       var blink = document.createElement('span');
@@ -545,4 +554,3 @@
   </script>
 </body>
 </html>
-
